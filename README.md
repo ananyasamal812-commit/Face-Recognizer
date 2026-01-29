@@ -26,6 +26,7 @@ Store user details (name, age, address, etc.) in a MySQL database
  MySQL database integration for storing user information
 
  Recognition of known users and labeling as UNKNOWN if not matched
+ 
  --------------------------------------------------------------------------------------------------
 
  # Technologies Used
@@ -47,25 +48,9 @@ numpy
 Pillow
 
 mysql-connector-python
+
 ---------------------------------------------------------------------------------------------------------
 
-# Project Structure
-
-Face_Recognition_System/
-│
-├── data/                     # Captured face images
-│   └── user.<id>.<count>.jpg
-│
-├── classifier.xml            # Trained face recognition model
-├── haarcascade_frontalface_default.xml
-│
-├── dataset_generator.py      # Captures face images
-├── train_classifier.py       # Trains LBPH model
-├── face_recognition.py       # Real-time face recognition
-├── gui.py                    # Tkinter GUI
-├── database.py               # MySQL integration
-└── README.md
-----------------------------------------------------------------------------------------------------------
 
 # How It Works
 
@@ -141,6 +126,7 @@ Model is saved as classifier.xml
 Click Detect the face
 
 Webcam starts recognizing known faces
+
 ------------------------------------------------------------------------------------------
 # Output
 
